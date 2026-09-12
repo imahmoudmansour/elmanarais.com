@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://elmanarais.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/index.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/about.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/about.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/american.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/american.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/american.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/british.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/british.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/british.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/academics.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/academics.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/academics.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/student-life.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/student-life.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/student-life.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/facilities.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/facilities.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/facilities.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/admissions.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/admissions.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/admissions.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/contact.html"/>
+  </url>
+  <url>
+    <loc>https://elmanarais.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://elmanarais.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://elmanarais.com/ar/privacy.html"/>
+  </url>
+</urlset>
