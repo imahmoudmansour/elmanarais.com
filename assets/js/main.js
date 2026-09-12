@@ -2,7 +2,7 @@
 (function () {
   "use strict";
 
-  var DESKTOP = window.matchMedia("(min-width: 1200px)");
+  var DESKTOP = window.matchMedia("(min-width: 1100px)");
 
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");

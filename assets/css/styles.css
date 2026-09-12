@@ -451,6 +451,11 @@ p:last-child {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex: none;
+}
+
+.nav-lang {
+  display: none;
 }
 
 .lang-switch {
@@ -610,37 +615,51 @@ p:last-child {
   padding-block: 0.5rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .nav-toggle {
     display: none;
   }
 
+  .lang-switch--tools {
+    display: none;
+  }
+
+  .nav-lang {
+    display: list-item;
+  }
+
   .site-header__bar {
-    gap: 0.35rem 1.25rem;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
   }
 
   .site-nav {
     display: block;
-    width: 100%;
-    padding-bottom: 0.55rem;
-    flex: 1 1 100%;
-    order: 3;
+    width: auto;
+    padding-bottom: 0;
+    flex: 1 1 auto;
+    order: 0;
+    min-width: 0;
   }
 
   .site-nav__list {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    gap: 0.35rem;
+    gap: 0.15rem;
     border-top: 0;
     padding-top: 0;
   }
 
   .site-nav__link,
   .sub-toggle {
-    padding: 0.45rem 0.45rem;
-    font-size: 0.8rem;
+    padding: 0.4rem 0.42rem;
+    font-size: 0.78rem;
     white-space: nowrap;
+  }
+
+  .nav-lang .lang-switch {
+    margin-inline-start: 0.35rem;
   }
 
   .site-nav__sub {
@@ -687,7 +706,7 @@ p:last-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 28%;
 }
 
 .hero__media::after {
@@ -740,7 +759,7 @@ p:last-child {
 }
 
 .hero--page .hero__media img {
-  object-position: center 45%;
+  object-position: center 32%;
 }
 
 .hero--plain {
@@ -1003,6 +1022,95 @@ p:last-child {
   font-size: clamp(1.1rem, 2.2vw, 1.35rem);
   font-style: italic;
   color: var(--green-700);
+}
+
+/* ---------------------------------------------------------------- memorial */
+
+.memorial {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.75rem);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .memorial {
+    grid-template-columns: minmax(16rem, 22.5rem) 1fr;
+  }
+}
+
+.memorial__portrait {
+  margin: 0;
+}
+
+.memorial__frame {
+  position: relative;
+  background: var(--green-800);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.memorial__frame::after {
+  content: "";
+  position: absolute;
+  inset: 0.7rem;
+  border: 1px solid rgba(201, 162, 39, 0.55);
+  pointer-events: none;
+}
+
+.memorial__frame img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.memorial__portrait figcaption {
+  margin-top: 1.1rem;
+  text-align: center;
+}
+
+.memorial__portrait figcaption strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--green-800);
+  font-weight: 600;
+}
+
+.memorial__portrait figcaption span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+
+.memorial__name {
+  margin: 0 0 1.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.1vw, 1.4rem);
+  line-height: 1.35;
+  color: var(--green-800);
+}
+
+.memorial__name span {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+
+.memorial .quote {
+  margin-top: 2rem;
 }
 
 /* ------------------------------------------------------------------ gallery */
@@ -1297,7 +1405,9 @@ p:last-child {
 [dir="rtl"] .footer__title,
 [dir="rtl"] .contact-item__label,
 [dir="rtl"] .quote footer,
-[dir="rtl"] .brand__sub {
+[dir="rtl"] .brand__sub,
+[dir="rtl"] .memorial__portrait figcaption span,
+[dir="rtl"] .memorial__name span {
   letter-spacing: 0;
   text-transform: none;
 }
