@@ -1034,7 +1034,8 @@ p:last-child {
 
 @media (min-width: 900px) {
   .memorial {
-    grid-template-columns: minmax(16rem, 22.5rem) 1fr;
+    grid-template-columns: minmax(18rem, 28rem) 1fr;
+    align-items: center;
   }
 }
 
@@ -1060,9 +1061,9 @@ p:last-child {
 
 .memorial__frame img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 20%;
   border-radius: 0;
   box-shadow: none;
 }
