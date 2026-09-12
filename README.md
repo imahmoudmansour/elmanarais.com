@@ -1,4 +1,4 @@
-# El Manara International School website
+# El Manara International Schools website
 
 Static HTML/CSS site for [elmanarais.com](https://elmanarais.com). English is the default language. Arabic lives in `/ar/`.
 
@@ -32,4 +32,4 @@ Point the domain document root at this folder. Enable HTTPS on the host. Apache 
 
 - Phone / WhatsApp: 010 38537388
 - Email: elmanarainternationalschool@gmail.com
-- Facebook: El Manara International School
+- Facebook: El Manara International Schools

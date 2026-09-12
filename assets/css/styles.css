@@ -1,5 +1,5 @@
 /* ==========================================================================
-   El Manara International School — global stylesheet
+   El Manara International Schools — global stylesheet
    Brand: deep green, gold, cream. Mobile-first, LTR with RTL overrides.
    ========================================================================== */
 
@@ -1438,6 +1438,187 @@ p:last-child {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ----------------------------------------------------- project partners */
+
+.partners .section-head {
+  max-width: 46rem;
+}
+
+.partners .lead {
+  color: rgba(247, 243, 234, 0.92);
+}
+
+.credit-banner {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  background: var(--green-900);
+  border: 1px solid rgba(220, 187, 82, 0.22);
+  border-radius: var(--radius-lg);
+}
+
+@media (min-width: 800px) {
+  .credit-banner {
+    grid-template-columns: auto 1fr;
+    gap: 2.25rem;
+    padding-inline: 2.5rem;
+  }
+}
+
+.credit-banner__logo {
+  width: min(11.5rem, 42vw);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #061018;
+  box-shadow: 0 0 0 3px rgba(220, 187, 82, 0.28), 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+.credit-banner__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.credit-banner__copy {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .credit-banner__copy {
+    text-align: start;
+  }
+}
+
+.credit-banner__copy h3 {
+  color: var(--white);
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  margin-bottom: 0.45rem;
+}
+
+.credit-banner__copy p {
+  margin: 0;
+  color: rgba(247, 243, 234, 0.82);
+}
+
+.partners__people {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .partners__people {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: stretch;
+  }
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  background: var(--green-900);
+  border: 1px solid rgba(220, 187, 82, 0.22);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.partner__media {
+  position: relative;
+  overflow: hidden;
+  background: #061018;
+}
+
+.partner__media--portrait {
+  height: 26rem;
+  flex: none;
+}
+
+.partner__media--portrait > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.partner__badge {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px rgba(220, 187, 82, 0.55), 0 8px 18px rgba(0, 0, 0, 0.45);
+  background: #111;
+}
+
+.partner__badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.partner__media--mark {
+  flex: 1;
+  min-height: 16rem;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(220, 187, 82, 0.12), transparent 58%),
+    var(--green-900);
+}
+
+.partner__monogram {
+  width: 7.25rem;
+  height: 7.25rem;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--gold-400);
+  border-radius: 50%;
+  color: var(--gold-400);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+}
+
+.partner__body {
+  padding: 1.35rem 1.4rem 1.6rem;
+  text-align: center;
+}
+
+.partner__role {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+
+.partner__body h3 {
+  margin: 0 0 0.35rem;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.partner__body p:last-child {
+  margin: 0;
+  color: rgba(247, 243, 234, 0.78);
+  font-size: 0.95rem;
+}
+
+[dir="rtl"] .partner__badge {
+  right: auto;
+  left: 1rem;
+}
+
+[dir="rtl"] .partner__monogram {
+  letter-spacing: 0;
 }
 
 @media print {
